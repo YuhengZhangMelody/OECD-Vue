@@ -27,17 +27,6 @@ export default defineConfig({
   optimizeDeps: {
     include: ['mapbox-gl', 'd3'],
   },
-  build: {
-    rollupOptions: {
-      external: ['mapbox-gl', 'd3'],
-      output: {
-        globals: {
-          'mapbox-gl': 'mapboxgl',
-          'd3': 'd3'
-        },
-      },
-    },
-  },
   assetsInclude: ['**/*.csv', '**/*.geojson'],
-  base: './', 
+  base: '/OECD-vue/', 
 });
